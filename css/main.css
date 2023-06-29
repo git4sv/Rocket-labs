@@ -1,0 +1,303 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+
+  /* border-radius: 3rem; */
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+:root {
+  --h-color: rgb(25, 25, 25);
+  --priamry-color: rgba(121, 174, 197, 0.358);
+}
+
+/* UTILITY CLASSES */
+.txt_cntr {
+  text-align: center;
+}
+
+.txt_col_pri {
+  color: var(--h-color);
+}
+
+.txt_col_sec {
+  color: white;
+}
+
+.font_n {
+  font-weight: 500;
+}
+
+.font_b {
+  font-weight: 550;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  height: 10vh;
+  background-color: transparent;
+
+  background-color: rgba(195, 195, 195, 0.13);
+  /* backdrop-filter: blur(55px); */ /*TWEAK THIS IF YOU NEED BACKGROUND BLUR*/
+}
+
+/* LOGO  */
+nav .left {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+  width: 99%;
+}
+
+/* NAVIGATION BAR LINKS */
+
+nav .right {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.links {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  border: 0.27rem solid transparent;
+  border-radius: 9rem;
+  transition: border 0.6s ease-in-out;
+}
+
+.links:hover,
+.selected {
+  border: 0.27rem solid white;
+
+  /* background-color: var(--h-color); */
+
+  color: white;
+}
+
+/*SECTION*****************************************************/
+#c_one::before {
+  content: " ";
+  background: url("../assets/images/rocketsat.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* THIS IS A SPCL CLASS BCAUSE OF THE NAVBAR HEIGTH I HAVE TO ADJUST THE HEIGHT TO 90VH */
+.spcl_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: .2rem solid black; */
+  width: 100vw;
+  height: 90vh;
+  flex-direction: column;
+  box-shadow: 0 03px 0 rgba(249, 247, 247, 0.3);
+  background-color: rgba(195, 195, 195, 0.13);
+  /* backdrop-filter: blur(55px); */ /*TWEAK THIS IF YOU NEED BACKGROUND BLUR*/
+}
+
+.heading span {
+  cursor: default;
+  font-size: 12rem;
+}
+
+/* EXPLORE BUTTON PROPERTIES*******************************/
+.button {
+  /* border: .2rem solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem;
+  width: 18rem;
+  height: 5.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: width 0.2s ease-in;
+  border: none;
+  border-radius: 7rem;
+  background-color: white;
+  color: var(--h-color);
+  text-decoration: none;
+  /* transition: 0.3s; */
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.button:hover {
+  width: 24rem;
+  cursor: pointer;
+  color: white;
+  background-color: var(--h-color);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+}
+
+.container {
+  display: flex;
+  /* border: .2rem solid black; */
+  width: auto;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 47vw;
+  height: 45%;
+  border-radius: 2rem;
+  /* border: .2rem solid black; */
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.item:hover {
+  cursor: pointer;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cardpic {
+  display: flex;
+  /* border:.2rem solid black; */
+  width: 50%;
+  height: 100%;
+  opacity: 0.95;
+}
+
+.cardpic .i1 {
+  background: url("../assets/images/rocket5.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.cardpic .i2 {
+  background: url("../assets/images/rocket3.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.cardpic .i3 {
+  background: url("../assets/images/rocket4.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.cardpic .i4 {
+  background: url("../assets/images/rocket2.jpg") no-repeat center center/cover;
+  width: 100%;
+}
+
+.cardtxt {
+  display: flex;
+  /* border:.2rem solid black; */
+  width: 50%;
+  /* height: 100%; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cardtxt h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cardtxt p {
+  font-size: 1.3rem;
+}
+
+.bgim {
+  background: url("../assets/images/rocketx.jpg") no-repeat center center/cover;
+  opacity: 0.95;
+}
+
+.container .box {
+  /* border: .2rem solid black; */
+  height: 50rem;
+  width: 40rem;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 2rem;
+  /* FOR THE OUTER GLOW */
+  box-shadow: 0 4px 8px 0 rgba(240, 240, 240, 0.3);
+  transition: 0.4s all;
+}
+
+.container .box:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: var(--primary-col);
+  background-color: rgba(255, 255, 255, 0.655);
+  color: rgba(0, 0, 0, 0.955);
+  box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.3);
+}
+
+.container .box h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4.5rem;
+}
+
+.container .box p {
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+  font-weight: 510;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col {
+  width: 48%;
+}
+select,
+input {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding: 8px 15px;
+  font-weight: 700;
+}
